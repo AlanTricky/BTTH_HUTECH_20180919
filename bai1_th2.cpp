@@ -55,7 +55,7 @@ void interchangeSort(int a[],int n){
 
 void selectionSort(int a[],int n){
 	int m;
-	for(int i=0;i<n;i++){
+	for(int i=0;i<n-1;i++){
 		m = a[i];
 		for(int j=i+1;j<n;j++){
 			if(a[j] < m){
@@ -70,7 +70,7 @@ void selectionSort(int a[],int n){
 void insertionSort(int a[],int n){
 	
 	int pos,x;
-	for(int i=0;i<n;i++){
+	for(int i=0;i<n-1;i++){
 		x = a[i]; pos = i-1;
 		while(pos >=0 && a[pos] > x){
 			a[pos+1] = a[pos];
